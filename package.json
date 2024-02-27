@@ -1,0 +1,16 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "hello to any tech",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "zxk44944@qq.com",
+  "license": "ISC",
+  "workspaces": [
+    "tech/any"
+  ],
+  "devDependencies": {
+    "tsx": "^4.7.1"
+  }
+}
