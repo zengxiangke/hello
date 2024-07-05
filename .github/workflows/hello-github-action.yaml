@@ -10,6 +10,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm -v
-      - run: which pnpm
-      - run: which yarn
+      - run: corepack enable
+      - run: pnpm -v
+      - run: yarn -v
