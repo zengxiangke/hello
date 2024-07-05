@@ -1,0 +1,15 @@
+name: hello github action
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: [push, workflow_dispatch]
+
+jobs:
+  foo:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm -v
+      - run: which pnpm
+      - run: which yarn
